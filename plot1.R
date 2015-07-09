@@ -1,5 +1,6 @@
 # Load data first
 source("loadData.R")
+data <- loadData()
 
 # Plot 1
 png(filename = "plot1.png", width = 480, height = 480)
