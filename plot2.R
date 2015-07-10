@@ -2,7 +2,7 @@
 source("loadData.R")
 data <- loadData()
 
-# Plot 1
+# Create PNG device
 png(filename = "plot2.png", width = 480, height = 480)
 # Set up plot parameters
 par(bg = "transparent",
@@ -14,4 +14,5 @@ plot(data$Time, data$Global_active_power,
      ylab = "Global Active Power (kilowatts)")
 # Draw a line
 lines(data$Time, data$Global_active_power)
+# Close device
 dev.off()
